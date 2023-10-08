@@ -13,5 +13,5 @@ do
     iperf3 -c $1 -p $2 -i 1 -t $rtime
     rtime=$(shuf -i 3-20 -n 1)
     echo "UDP Runtime is: $rtime"
-    iperf3 -u -c $1 -p $2 -i 1 -t $rtime
+    iperf3 -u -c $1 -p $2 -i 1 -t $rtime -b 10
 done
