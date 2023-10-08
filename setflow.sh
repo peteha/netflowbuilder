@@ -6,7 +6,6 @@ sleep 2
 echo "Starting server on $1 on port $2"
 ssh $1 'iperf3 -sD -p '$2''
 
-
 for (( ; ; ))
 do
     rtime=$(shuf -i 3-20 -n 1)
